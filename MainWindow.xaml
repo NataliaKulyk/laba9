@@ -1,0 +1,17 @@
+﻿<Window x:Class="ParkingMonitoring.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Моніторинг парковки" Height="350" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <!-- Текст із кількістю вільних і зайнятих місць -->
+            <TextBlock Name="OccupancyText" FontSize="16" Margin="0,0,0,10" />
+
+            <!-- Прогрес-бар для відображення заповненості -->
+            <ProgressBar Name="ParkingProgressBar" Height="25" Minimum="0" Maximum="100" Margin="0,0,0,10" />
+
+            <!-- Список для логів -->
+            <ListBox Name="LogListBox" Height="200" />
+        </StackPanel>
+    </Grid>
+</Window>
